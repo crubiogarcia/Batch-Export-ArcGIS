@@ -1,91 +1,45 @@
-# Computational Design
-**About me:**
-  Hi, my name is Carmen and I am an Architect and Computational Designer at Foster + Partners in London.
-  
-  In my free time, I am interested in software development, complex geometries, urban models and code components for different softwares as ArcGIS, Grasshopper and Rhinoceros.
+# Batch Export ArcGIS Python Toolbox
 
-**I am most skilled in:**
-Grasshopper, Python, C#, GIS, Dynamo, Rhinoceros, Revit
+This toolbox contains three custom ArcGIS tools for batch exporting layouts and maps from an ArcGIS project. The tools allow you to export layouts as `.PAGX` or `.PDF` files, and maps as `.MPKX` packages. These tools are designed to simplify the process of exporting multiple layouts and maps from an ArcGIS project in one step.
 
-** **
-## Projects
-### Moth Grasshopper Plugin
+## Tools
 
-Moth is a fun toolkit with various functionalities that I have found useful throughout my years of working with Grasshopper. It is available in the Rhino Package Manager!
+### 1. Export as PAGX Tool
+This tool batch exports all layouts in the current ArcGIS project as `.PAGX` files, which can be used to share or reuse layout configurations.
 
-Some key features are: mesh face clustering, quick urban grid generation, tools for graphs and image metadata extraction. 
+#### Parameters
+- **Folder location for exported files** (Required): Specifies the folder where the exported `.PAGX` files will be saved.
 
-[Repository](https://github.com/crubiogarcia/Moth-Grasshopper-Plugin)
-[Food4Rhino](https://www.food4rhino.com/en/app/moth)
+### 2. Export as PDF Tool
+This tool batch exports all layouts in the current ArcGIS project as `.PDF` files. You can customize the export settings like resolution, image quality, and compression.
 
-### Contour Curve Processing for CNC Models
+#### Parameters
+- **Folder location for exported files** (Required): Specifies the folder where the exported `.PDF` files will be saved.
 
-This tool offers a systematic approach to transform CAD contour data into actionable and precise digital models. This has been particularly beneficial in preparing files containing a large volume of topography data for the creation of contour-stepped models through CNC machining. 
+### 3. Export as MPKX Tool
+This tool batch exports all maps in the current ArcGIS project as `.MPKX` (Map Package) files, allowing you to package maps for sharing or reuse.
 
-[Repository](https://github.com/crubiogarcia/ContourCurveTopographyProcessing)
+#### Parameters
+- **Folder location for exported files** (Required): Specifies the folder where the exported `.MPKX` files will be saved.
 
-### Urban Dynamics: Data Analysis and Machine Learning for Understanding Contemporary Cities. Learning from Airbnb
+## Installation
 
-BArch Thesis. This research project explores  artificial intelligence and big data for urban analysis through the study of Airbnb data from three case studies: Madrid, Berlin, and Chicago.
+1. Clone or download this repository.
+2. Place the `.pyt` file into your ArcGIS project's `Toolboxes` folder.
 
-[Link to publication (Spanish)](https://oa.upm.es/65083/)  
-[Link to summary (English)](https://raw.githubusercontent.com/crubiogarcia/Urban-Dynamics-Data-Analysis-Machine-Learning/main/BachelorThesis_Urban%20Dynamics.pdf)    
-![Bachelor Thesis](/assets/img/mps.png)
+## Usage
 
-### Differential Growth Simulation
+1. Open ArcGIS Pro and load your project.
+2. Navigate to the **Catalog** pane and locate the toolbox.
+3. Double-click the desired tool to open its interface.
+4. Specify the folder location for the exported files.
+5. Click **Run** to execute the tool.
 
-Differential growth is when different parts of an organism grow at varying rates or directions, altering its form. Through procedural generation, this algorithm simulates the growth of organic structures. This method allows the creation of highly realistic environments in computer graphics. This script simulates differential growth patterns in a mesh using Kangaroo Physics.
-  
-[Repository](https://github.com/crubiogarcia/Differential-Growth)  
-![Differential Growth](/assets/img/differential.png)
+## Requirements
 
-### Urban Grid Tools
-[Repository](https://github.com/crubiogarcia/Urban-Grid-Tools)
+- ArcGIS Pro
 
-A set of tools in Python for Grasshopper to generate urban grids.
-![Urban Grid](/assets/img/UrganGrid.png)
 
-### Plot Fit  
-[Repository](https://github.com/crubiogarcia/PlotFit)
+## License
 
-This script implements a method for placing building assets along a curve. It maximizes the number of assets positioned along a curve running a test fit through a loop of physical collisions.
-![Plot Fit](/assets/img/PlotFit.png)
-
-** **
-## Work Experience
-**Computational Designer at Foster + Partners, London**  
-(_February 2022 - Present_)
-- Computational Urbanism
-- Complex geometry modelling
-- Automation pipelines
-- Geometry optimization workflows
-- Developed tools for inter-operability between CAD and BIM
-
-**Computational Designer at Morph Estudio, Madrid**  
-(_September 2021 - January 2022_)
-- Created a database of architectural elements and their ecological footprint to automate the selection of the most sustainable materials
-- Developed tools for Rhinoceros 
-
-  **Architecture Internship at Raumlabor, Berlin**    
-(_January 2020 - August 2020_)
-- Parametric modelling 
-**Archive Internship at Norman Foster Foundation, Madrid**  
-(_June 2019 - September 2019_)
-
-**Architecture Internship at FGP Atelier, Chicago**     
-(_June 2018 - December 2018_)
-
-** **
-## Education						       		  								       		
-- M.S., Arch	| Universidad Politecnica Madrid  (_ETSAM_) 	        		
-- B.S., Arch | Berliner Hochschule fur Technik  (_Erasmus Scholarhsip_)
-- B.S., Arch | Illinois Institute of Technology (_Santander Award_)
-
-** **
-## Interests
-- Computational Dynamics
-- Computational Design
-- Data Visualization
-- Complex geometry modelling
-- Optimization problems
-- Machine Learning
+This project is licensed under the MIT License.
